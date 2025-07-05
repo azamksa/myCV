@@ -119,6 +119,7 @@
         /* CV Container */
         .cv-container {
             max-width: 1000px;
+            position: center !important;
             margin: 2rem auto;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -127,6 +128,9 @@
             padding: 2rem;
             width: 95%;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            position: relative;
+            left: auto;
+            right: auto;
         }
 
         body.light-mode .cv-container {
@@ -284,7 +288,11 @@
 
             .cv-container {
                 padding: 1rem;
-                margin: 1rem;
+                margin: 1rem auto;
+                position: relative;
+                left: auto;
+                right: auto;
+                width: calc(100% - 2rem); 
             }
 
             .section {
