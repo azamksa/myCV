@@ -398,7 +398,7 @@
                 </button>
             </div>
             <div class="right-buttons">
-                <a id="download-btn" class="modern-btn" href="cv-en.pdf" download title="تحميل السيرة الذاتية">
+                <a id="download-btn" class="modern-btn" href="cv-en.pdf?v=20260801" download title="تحميل السيرة الذاتية">
                     <span class="btn-icon">📥</span>
                     <span class="btn-text">Download</span>
                 </a>
@@ -452,10 +452,10 @@
             <div style="margin-top: 1rem;">
                 <h3 class="lang-en" style="margin-bottom: 0.75rem;">Graduation Certificate</h3>
                 <h3 class="lang-ar" style="margin-bottom: 0.75rem; display: none;">وثيقة التخرج</h3>
-                <img src="graduation-certificate.jpg" alt="Qassim University Graduation Certificate" style="display: block; width: 100%; max-width: 360px; height: auto; border-radius: 10px;">
+                <img src="graduation-certificate.jpg?v=20260801" alt="Qassim University Graduation Certificate" style="display: block; width: 100%; max-width: 360px; height: auto; border-radius: 10px;">
                 <p style="margin-top: 0.75rem;">
-                    <a class="lang-en" href="graduation-certificate.jpg" download="graduation-certificate.jpg">Download Graduation Certificate</a>
-                    <a class="lang-ar" href="graduation-certificate.jpg" download="graduation-certificate.jpg" style="display: none;">تحميل وثيقة التخرج</a>
+                    <a class="lang-en" href="graduation-certificate.jpg?v=20260801" download="graduation-certificate.jpg">Download Graduation Certificate</a>
+                    <a class="lang-ar" href="graduation-certificate.jpg?v=20260801" download="graduation-certificate.jpg" style="display: none;">تحميل وثيقة التخرج</a>
                 </p>
             </div>
         </div>
@@ -541,11 +541,11 @@
                 // Update button text
                 if (lang === 'en') {
                     langBtn.querySelector('.btn-text').textContent = 'العربية';
-                    downloadBtn.setAttribute('href', 'cv-en.pdf');
+                    downloadBtn.setAttribute('href', 'cv-en.pdf?v=20260801');
                     downloadBtn.querySelector('.btn-text').textContent = 'Download';
                 } else {
                     langBtn.querySelector('.btn-text').textContent = 'English';
-                    downloadBtn.setAttribute('href', 'cv-ar.pdf');
+                    downloadBtn.setAttribute('href', 'cv-ar.pdf?v=20260801');
                     downloadBtn.querySelector('.btn-text').textContent = 'تحميل';
                 }
 
