@@ -447,8 +447,31 @@
             <h2 class="lang-ar" style="display: none;">التعليم</h2>
             <h3 class="lang-en">Bachelor's Degree in Computer Science</h3>
             <h3 class="lang-ar" style="display: none;">بكالوريوس في علوم الحاسب</h3>
-            <p class="lang-en">Qassim University – Expected Graduation: 2025</p>
-            <p class="lang-ar" style="display: none;">جامعة القصيم – متوقع التخرج: 2025</p>
+            <p class="lang-en">Qassim University – Graduated: June 2026</p>
+            <p class="lang-ar" style="display: none;">جامعة القصيم – تاريخ التخرج: يونيو 2026</p>
+            <div style="margin-top: 1rem;">
+                <h3 class="lang-en" style="margin-bottom: 0.75rem;">Graduation Certificate</h3>
+                <h3 class="lang-ar" style="margin-bottom: 0.75rem; display: none;">وثيقة التخرج</h3>
+                <img src="graduation-certificate.jpg" alt="Qassim University Graduation Certificate" style="display: block; width: 100%; max-width: 360px; height: auto; border-radius: 10px;">
+                <p style="margin-top: 0.75rem;">
+                    <a class="lang-en" href="graduation-certificate.jpg" download="graduation-certificate.jpg">Download Graduation Certificate</a>
+                    <a class="lang-ar" href="graduation-certificate.jpg" download="graduation-certificate.jpg" style="display: none;">تحميل وثيقة التخرج</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Professional Development -->
+        <div class="section">
+            <h2 class="lang-en">Professional Development</h2>
+            <h2 class="lang-ar" style="display: none;">التطوير المهني</h2>
+            <h3 class="lang-en">IBM SkillsBuild Course</h3>
+            <h3 class="lang-ar" style="display: none;">دورة IBM SkillsBuild</h3>
+            <p class="lang-en">Completed a professional learning course relevant to Computer Science and Software Development.</p>
+            <p class="lang-ar" style="display: none;">أتممت دورة تدريبية مهنية مرتبطة بعلوم الحاسب وتطوير البرمجيات.</p>
+            <p style="margin-top: 0.75rem;">
+                <a class="lang-en" href="https://skills.yourlearning.ibm.com/activity/PLAN-BA198C182B22" target="_blank" rel="noopener noreferrer">View Course</a>
+                <a class="lang-ar" href="https://skills.yourlearning.ibm.com/activity/PLAN-BA198C182B22" target="_blank" rel="noopener noreferrer" style="display: none;">عرض الدورة</a>
+            </p>
         </div>
 
         <!-- Contact -->
@@ -457,15 +480,15 @@
             <h2 class="lang-ar" style="display: none;">التواصل</h2>
             <p class="lang-en">Email: <a href="mailto:azam2012555@gmail.com">azam2012555@gmail.com</a></p>
             <p class="lang-ar" style="display: none;">الإيميل: <a href="mailto:azam2012555@gmail.com">azam2012555@gmail.com</a></p>
-            <p class="lang-en">Phone: <a href="tel:+966535743021">+966 53 574 3021</a></p>
-            <p class="lang-ar" style="display: none;">الهاتف: <a href="tel:+966535743021">+966 53 574 3021</a></p>
+            <p class="lang-en">Phone: <a href="tel:+966535743021" dir="ltr" style="unicode-bidi: isolate;">+966 53 574 3021</a></p>
+            <p class="lang-ar" style="display: none;">الهاتف: <a href="tel:+966535743021" dir="ltr" style="unicode-bidi: isolate;">+966 53 574 3021</a></p>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p class="lang-en">&copy; 2025 Azam Fahad Alredini.</p>
-        <p class="lang-ar" style="display: none;">&copy; 2025 عزام فهد الرديني.</p>
+        <p class="lang-en">&copy; 2025 Azam Fahad Alredini. · <a href="https://azamksa.github.io/myCV/" target="_blank" rel="noopener noreferrer">View this CV in your browser</a></p>
+        <p class="lang-ar" style="display: none;">&copy; 2025 عزام فهد الرديني. · <a href="https://azamksa.github.io/myCV/" target="_blank" rel="noopener noreferrer">عرض السيرة في المتصفح</a></p>
     </footer>
 
     <script>
@@ -473,7 +496,7 @@
         const langBtn = document.getElementById('lang-btn');
         const downloadBtn = document.getElementById('download-btn');
         const body = document.body;
-        let currentLang = 'en';
+        let currentLang = new URLSearchParams(window.location.search).get('lang') === 'ar' ? 'ar' : 'en';
         let isDarkMode = true;
 
         // Initialize theme
