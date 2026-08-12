@@ -54,7 +54,7 @@
         <button id="lang-btn" class="modern-btn" type="button" title="Change language"><span class="btn-icon">🌐</span><span class="btn-text">العربية</span></button>
       </div>
       <div class="right-buttons">
-        <a id="download-btn" class="modern-btn" href="https://azamksa.github.io/myCV/cv-en.pdf?v=20260813" download title="Download CV"><span class="btn-icon">📥</span><span class="btn-text">Download</span></a>
+        <a id="download-btn" class="modern-btn" href="https://azamksa.github.io/myCV/cv-en.pdf?v=20260813-3" download title="Download CV"><span class="btn-icon">📥</span><span class="btn-text">Download</span></a>
       </div>
     </div>
     <h1 class="lang-en">Azam Fahad Alredini</h1>
@@ -125,7 +125,7 @@
       document.querySelectorAll('.lang-ar').forEach(el => { el.style.display = lang === 'ar' ? '' : 'none'; });
       body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
       langBtn.querySelector('.btn-text').textContent = lang === 'en' ? 'العربية' : 'English';
-      downloadBtn.href = lang === 'en' ? 'https://azamksa.github.io/myCV/cv-en.pdf?v=20260813' : 'https://azamksa.github.io/myCV/cv-ar.pdf?v=20260813';
+      downloadBtn.href = lang === 'en' ? 'https://azamksa.github.io/myCV/cv-en.pdf?v=20260813-3' : 'https://azamksa.github.io/myCV/cv-ar.pdf?v=20260813-3';
       downloadBtn.querySelector('.btn-text').textContent = lang === 'en' ? 'Download' : 'تحميل';
       currentLang = lang;
     }
